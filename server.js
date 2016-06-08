@@ -24,9 +24,9 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-
+/*
 routes(app, passport);
-
+*/
 
 app.get('*', function(req, res){
 	var ip = "ipaddress: "+req.headers['x-forwarded-for']; //req.connection.remoteAddress)
